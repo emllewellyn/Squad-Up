@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>   
+<head>     
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no">     <title>Create Group</title>  
+	<link rel="stylesheet" href="style.css">	
+	<script src="myFunctions.js"></script>
+</head>   
+<body> 		         
+	<div class="backDisplay">     
+		<button id="back" onclick="goBack();"> Back </button>
+		<h1> Create Your Group </h1>
+	</div>
+	<div>
+		<form method="post" autocomplete="off" id="createGroupForm" class="signIn" action="myGroup.html">             
+			<label for="name">Group Name:</label>
+			<div class="error" id="name-error">Group name is a required field.</div>
+			<input type="text" name="groupName" id="groupName" required>
+			
+			<label for="desc">Description:</label>
+			<div class="error" id="desc-error">Description is a required field.</div>       
+			<input type="text" name="description" id="description" required>  
+			
+			<label for="game">Select Game:</label>
+			<div class="error" id="game-error">Game is a required field.</div>
+			<select id="gameSelected" name="gameSelected" required>
+				<option disabled selected value> -- select an option -- </option>
+				<option value="MK8">Mario Kart 8 Deluxe</option>
+				<option value="RL">Rocket League</option>
+				<option value="OW">Overwatch</option>
+			</select>
+			<br/>       
+			<input type="submit" value="Create" onclick="saveDetails();">           
+		</form>          
+	</div>       
+</body> 
+</html>

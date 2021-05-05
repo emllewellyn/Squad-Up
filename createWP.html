@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html>   
+<head>     
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no">     <title>Create WP</title>  
+	<link rel="stylesheet" href="style.css">	
+	<script src="myFunctions.js"></script>
+</head>   
+<body> 		         
+	<div class="backDisplay">     
+		<button id="back" onclick="goBack();"> Back </button>
+		<h1> Create Your Watch Party </h1>
+	</div>
+	<div>
+		<form method="post" autocomplete="off" id="createWPForm" class="signIn" action="watchParty.html">             
+			<label for="name">Watch Party Name:</label>
+			<div class="error" id="name-error">Group name is a required field.</div>
+			<input type="text" name="wpName" id="wpName" required>
+			
+			<label for="desc">Description:</label>
+			<div class="error" id="desc-error">Description is a required field.</div>       
+			<input type="text" name="wpDescription" id="wpDescription" required>  
+			
+			<label for="game">Select Game:</label>
+			<div class="error" id="game-error">Game is a required field.</div>
+			<select id="wpGameSelected" name="wpGameSelected" required>
+				<option disabled selected value> -- select an option -- </option>
+				<option value="MK8">Mario Kart 8 Deluxe</option>
+				<option value="RL">Rocket League</option>
+				<option value="OW">Overwatch</option>
+			</select>
+			
+			<label for="link">Link:</label>
+			<div class="error" id="link-error">Link is a required field.</div>       
+			<input type="text" name="wpLink" id="wpLink" required>
+			<br/>       
+			<input type="submit" value="Create" onclick="saveDetailsWP();">           
+		</form>          
+	</div>       
+</body> 
+</html>

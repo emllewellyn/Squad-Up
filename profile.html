@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>   
+<head>     
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no">     <title>Profile</title>  
+	<link rel="stylesheet" href="style.css">	
+	<script src="myFunctions.js"></script>
+</head>   
+<body onload="setProfile();"> 
+	<div class="backDisplay">
+		<img class="help" id="profileHelp" src="help.png" 
+		onclick="alert('You can see the games you have liked, the groups you have joined here, and access settings. You can also create a group as well.')"></img>
+		<img id="settings" src="cog.png" onclick="alert('Settings not implemented into the prototype. You would be able to change your username, description, and profile picure among other things. You can also sign out here.')"></img>
+		<header> Squad Up </header>
+	</div>
+	<div>     
+		<img id="profPic" src="profilePic.png"></img>
+		<h1 id="username"> </h1>
+		<p> Your description </p>
+	</div>
+	<p class="listHeader"> Liked Games </p>
+	<div class="listBox">
+		<ul id="gameList"></ul>
+	</div>
+	<p class="listHeader"> Your Groups </p>
+	<button id="createGroup" onclick="location.href = 'createGroup.html'"> Create Group </button>
+	<div class="listBox">
+		<ul id="groupList"></ul>
+	</div>
+	<div class="navbar">
+		<img src="gamesIcon.png" onclick="location.href = 'games.html'"></img>
+		<img src="userIcon.png" onclick="location.href = 'users.html'"></img>
+		<img src="groupIcon.png" onclick="location.href = 'groups.html'"></img>
+		<img src="profilePic.png" onclick="location.href = 'profile.html'"></img>
+	</div>
+</body> 
+</html>

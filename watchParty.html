@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html>   
+<head>     
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no">     <title>Watch Party</title>  
+	<link rel="stylesheet" href="style.css">	
+	<script src="myFunctions.js"></script>
+</head>   
+<body onload="createWP();"> 
+	<div class="backDisplay">
+		<button id="back" onclick="location.href='profile.html';"> Back </button>
+		<header id="wpHeader" class="groupHeader"> </header>
+	</div>
+	<div>     
+		<h1 id="myWPDescription"> </h1>
+		<p id="currWPGame"> </p>
+	</div>
+	<div class="wpBox" onClick="alert('The video or stream link you put in would show up here');">
+		<p> Video area </p>
+	</div>
+	<p class="listHeader"> Chat: </p>
+	<div class="listBox" onClick="alert('Chat is not functional.');">
+		<ul id="wpGroupChat"></ul>
+	</div>
+	<div class="navbar">
+		<img src="gamesIcon.png" onclick="location.href = 'games.html'"></img>
+		<img src="userIcon.png" onclick="location.href = 'users.html'"></img>
+		<img src="groupIcon.png" onclick="location.href = 'groups.html'"></img>
+		<img src="profilePic.png" onclick="location.href = 'profile.html'"></img>
+	</div>
+</body> 
+</html>

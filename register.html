@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html>   
+<head>     
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no">     <title>Register</title>  
+	<link rel="stylesheet" href="style.css">	
+	<script src="myFunctions.js"></script>
+</head>   
+<body> 		         
+	<div class="backDisplay">     
+		<button id="back" onclick="goBack();"> Back </button>
+		<h1>Register for Squad Up! </h1>
+	</div>
+	<div>
+		<form method="post" autocomplete="off" id="register" class="signIn" action="profile.html">             
+			<label for="name">Your Name:</label>
+			<div class="error" id="name-error">Name is a required field.</div>
+			<input type="text" name="name" id="name" required>
+			
+			<label for="name">Username:</label>
+			<div class="error" id="name-error">Username is a required field.</div>
+			<input type="text" name="name" id="username" required>
+
+			<label for="email">Email:</label>
+			<div class="error" id="email-error">Email is a required field.</div>
+			<input type="email" name="email" id="email" required>
+				
+			<label for="pwd">Password:</label>
+			<div class="error" id="pwd-error">Password is a required field.</div>       
+			<input type="password" name="pwd" id="pwd" required>       
+			<br/>       
+			<input type="submit" value="Sign up" onclick="saveUsername();">           
+		</form>          
+	</div>       
+</body> 
+</html>

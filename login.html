@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html>   
+<head>     
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no">     <title>Login</title>  
+	<link rel="stylesheet" href="style.css">	
+</head>   
+<body> 	    
+	<div class="info">     
+		<h1 id="loginHeader"> Login </h1>
+		<form method="post" autocomplete="off" id="login" class="signIn">             
+			<label for="email">Email:</label>
+			<div class="error" id="email-error">Email is a required field.</div>
+			<input type="email" name="email" id="email" required>
+				
+			<label for="pwd">Password:</label>
+			<div class="error" id="pwd-error">Password is a required field.</div>       
+			<input type="password" name="pwd" id="pwd" required>       
+			<br/>       
+			<input type="submit" value="Login" onclick="alert('Need to create account for this prototype.');">
+		</form>
+		<button id="regButton" onclick="location.href = 'register.html';"> Register </button>
+	</div>     
+</body> 
+</html>

@@ -1,0 +1,248 @@
+header {
+	font-family: Futura, Trebuchet MS;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 15px;
+	text-align: center;
+}
+
+.groupHeader {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+body {
+	font-family: Minion Pro, Arial;
+	font-weight: bold;
+	background-color: #3F67F5;
+}
+
+h1 {
+	font-family: Futura, Trebuchet MS;
+	font-size: 20px;
+	text-align: center;
+}
+
+p {
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+#profPic{
+    display: block; 
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#filter {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 110px;
+	right: 15px;
+}
+
+.listHeader {
+	text-align: left;
+	margin: 0;
+	padding-top: 10px;
+}
+
+.listBox { 
+	padding: 5px; 
+	margin: 7px; 
+	border: 3px solid;
+	height: 120px;
+	border-radius: 7px;
+	background-color: #0DB1FA;
+}
+
+.search {
+	height: 420px;
+}
+
+.listBox li  {
+	list-style-type: none;
+	text-align: left;
+}
+
+.listBox li a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	text-align: left;
+}
+
+.listBox li p {
+	display: block;
+	text-decoration: none;
+	color: black;
+	text-align: left;
+}
+
+.wpBox { 
+	padding: 5px; 
+	margin: 7px; 
+	border: 3px solid;
+	height: 200px;
+	border-radius: 7px;
+	background-color: #0DB1FA;
+}
+
+video {
+	border: 3px solid;
+	border-radius: 50px;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+ 	-moz-transition: all 1s ease-in-out;
+ 	-webkit-transition: all 1s ease-in-out;
+ 	-o-transition: all 1s ease-in-out;
+ 	-ms-transition: all 1s ease-in-out;
+ 	transition: all 1s ease-in-out;
+}
+
+#loginHeader {
+	text-align: center;
+}
+
+#regButton {
+	font-size: 16px;
+	height: 30px;
+	width: 80px;
+	margin: 0 auto;
+	margin-top: 10px;
+    display: block;
+	background-color: #F5B700;
+}
+
+#joinButton {
+	font-size: 16px;
+	height: 30px;
+	width: 70px;
+	margin: 0 auto;
+	margin-top: 10px;
+    display: block;
+	background-color: #F5B700;
+}
+
+#wpButton {
+	font-size: 16px;
+	height: 30px;
+	width: 120px;
+	margin: 0 auto;
+	margin-top: 10px;
+    display: block;
+	background-color: #F5B700;
+}
+
+#createGroup {
+	position: absolute;
+	right: 20px;
+	top: 420px;
+	height: 25px;
+	width: 100px;
+	background-color: #F5B700;
+}
+
+#back {
+	position: absolute;
+	left: 0;
+	top: 15px;
+	height: 25px;
+	width: 60px;
+	background-color: #F5B700;
+}
+
+#settings {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	height: 45px;
+	width: 45px;
+}
+
+.help {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	height: 45px;
+	width: 45px;
+}
+
+.backDisplay {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.navbar {
+	background-color: #333;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.navbar img {
+	width: 60px;
+	height: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.navbar img.active {
+	background-color: #04AA6D;
+}
+
+label {
+	display: block;
+}
+
+input {
+	height: 25px;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+select {
+	height: 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+form {
+	padding: 5px;
+}
+
+.error {
+	background-color: LightYellow;
+	color: DarkRed;
+	width: 160px;
+	padding: 10px;
+	border: 1px solid gray;
+	position: absolute;
+	left: 120px;
+	box-shadow: 3px 3px 3px #999999;
+	border-radius: 7px;
+	visibility: hidden;
+}
+
+.signIn input:valid {
+	background-color: green;
+}
+
+.signIn input[type='submit'] {
+	font-size: 16px;
+	height: 30px;
+	width: 80px;
+	margin: 0 auto;
+	margin-top: 10px;
+    display: block;
+	background-color: #F5B700;
+}

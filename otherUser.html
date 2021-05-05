@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>   
+<head>     
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no">     <title>Profile</title>  
+	<link rel="stylesheet" href="style.css">	
+	<script src="myFunctions.js"></script>
+</head>   
+<body onload="setProfile();"> 
+	<div class="backDisplay">
+		<img class="help" id="profileHelp" src="help.png" 
+		onclick="alert('You can see the games they have liked and the groups they have joined here. You can also start a chat with them.')"></img>
+		<header> Squad Up </header>
+	</div>
+	<div>     
+		<img id="profPic" src="profilePic.png"></img>
+		<h1> MK God </h1>
+		<p> Their description </p>
+		<button id="joinButton" onclick="alert('Chat is not implemented. You would be able to enter a chat screen here where you can send text messages to the other user. This is also where you could invite them to join a group you are in or create a group with them.')"> Chat </button>
+	</div>
+	<p class="listHeader"> Liked Games </p>
+	<div class="listBox">
+		<ul id="theirGameList">
+			<li> Mario Kart 8 Deluxe </li>
+		</ul>
+	</div>
+	<p class="listHeader"> Their Groups </p>
+	<div class="listBox">
+		<ul id="theirGroupList"></ul>
+	</div>
+	<div class="navbar">
+		<img src="gamesIcon.png" onclick="location.href = 'games.html'"></img>
+		<img src="userIcon.png" onclick="location.href = 'users.html'"></img>
+		<img src="groupIcon.png" onclick="location.href = 'groups.html'"></img>
+		<img src="profilePic.png" onclick="location.href = 'profile.html'"></img>
+	</div>
+</body> 
+</html>

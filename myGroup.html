@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>   
+<head>     
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no">     <title>My Group</title>  
+	<link rel="stylesheet" href="style.css">	
+	<script src="myFunctions.js"></script>
+</head>   
+<body onload="createGroup();"> 
+	<div class="backDisplay">
+		<button id="back" onclick="location.href='profile.html';"> Back </button>
+		<header id="myName" class="groupHeader"> Play MK8 deluxe with me </header>
+	</div>
+	<div>     
+		<h1 id="myDescription"> </h1>
+		<p id="currGame"> </p>
+		<button id="wpButton" onclick="location.href = 'createWP.html';"> Watch Party </button>
+	</div>
+	<p class="listHeader"> Users: </p>
+	<div class="listBox">
+		<ul id="mUserList"></ul>
+	</div>
+	<p class="listHeader"> Chat: </p>
+	<div class="listBox" onClick="alert('Chat is not functional.');">
+		<ul id="mGroupChat"></ul>
+	</div>
+	<div class="navbar">
+		<img src="gamesIcon.png" onclick="location.href = 'games.html'"></img>
+		<img src="userIcon.png" onclick="location.href = 'users.html'"></img>
+		<img src="groupIcon.png" onclick="location.href = 'groups.html'"></img>
+		<img src="profilePic.png" onclick="location.href = 'profile.html'"></img>
+	</div>
+</body> 
+</html>

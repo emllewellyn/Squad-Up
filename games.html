@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>   
+<head>     
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no">     <title>Games</title>  
+	<link rel="stylesheet" href="style.css">	
+	<script src="myFunctions.js"></script>
+</head>   
+<body> 
+	<div class="backDisplay"> 
+		<img class="help" id="groupHelp" src="help.png" 
+		onclick="alert('You can search for games with the search bar and use the filter get more specific results. Once you find a game you want to check out, click on it see more details.')"></img>
+		<header> Squad Up </header>
+	</div>
+	<p class="listHeader"> Search Games </p>
+	<div>
+		<form method="post" autocomplete="off" id="gameSearch">             
+			<input type="text" name="gameName" id="gameName">           
+		</form>  
+		<img src="filter.png" id="filter" onclick="noFilter();"></img>
+	</div>
+	<div>
+		<ul class="listBox search" id="gameSearchList">
+			<li><p onclick="alert('Games is not functional. You would be able to look the description of a game, be able to like it, make a post about the game, and interact with other user posts.');"> Mario Kart 8 Deluxe </p></li>
+		</ul>
+	</div>
+	<div class="navbar">
+		<img src="gamesIcon.png" onclick="location.href = 'games.html'"></img>
+		<img src="userIcon.png" onclick="location.href = 'users.html'"></img>
+		<img src="groupIcon.png" onclick="location.href = 'groups.html'"></img>
+		<img src="profilePic.png" onclick="location.href = 'profile.html'"></img>
+	</div>
+</body> 
+</html>
