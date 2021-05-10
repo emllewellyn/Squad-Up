@@ -2,6 +2,7 @@ function saveUsername() {
 	var input = document.getElementById("username").value;
 	localStorage.setItem("username", input);
 	localStorage.setItem("joined", 0);
+	localStorage.removeItem("groupName");
 }
 	
 function goBack() {
